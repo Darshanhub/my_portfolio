@@ -1,0 +1,134 @@
+/* ═══════════════════════ RESPONSIVE ═══════════════════════ */
+
+/* ── TABLET (≤ 768px) ── */
+@media (max-width: 768px) {
+  body { cursor: auto; }
+
+  .cursor-dot,
+  .cursor-ring,
+  #cursorTrail { display: none; }
+
+  .nav-links { display: none; }
+
+  .nav-hamburger {
+    display: flex;
+  }
+
+  .hero-name { letter-spacing: 0.02em; }
+
+  .hero-actions { flex-direction: column; align-items: center; }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hex-node {
+    width: 90px;
+    height: 90px;
+  }
+
+  .hex-icon { font-size: 1.3rem; }
+  .hex-label { font-size: 0.6rem; }
+
+  .timeline {
+    padding-left: 2rem;
+  }
+
+  .timeline-node {
+    left: -1.65rem;
+  }
+
+  .timeline-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .flip-card { height: 280px; }
+
+  /* Touch-friendly flip */
+  .flip-card:hover .flip-card-inner { transform: none; }
+
+  .badges-grid {
+    gap: 1rem;
+  }
+
+  .badge { width: 130px; }
+
+  .contact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Reduce geo shapes on mobile */
+  .geo-3, .geo-5, .geo-10 { display: none; }
+
+  /* Matrix rain disabled on mobile */
+  .matrix-canvas { display: none; }
+}
+
+/* ── SMALL MOBILE (≤ 480px) ── */
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .stat-card { padding: 1.2rem 1rem; }
+
+  .hex-grid { gap: 0.6rem; }
+
+  .hex-node {
+    width: 75px;
+    height: 75px;
+  }
+
+  .hex-icon { font-size: 1.1rem; }
+  .hex-label { font-size: 0.55rem; }
+
+  .contact-grid { grid-template-columns: 1fr; }
+
+  .badges-grid { flex-direction: column; align-items: center; }
+
+  .edu-grid { grid-template-columns: 1fr; }
+
+  .edu-card { flex-direction: column; }
+}
+
+/* ── LARGE DESKTOP (≥ 1440px) ── */
+@media (min-width: 1440px) {
+  .container { max-width: 1300px; }
+  .stats-grid { grid-template-columns: repeat(5, 1fr); }
+  .hex-node { width: 120px; height: 120px; }
+}
+
+/* ── TOUCH DEVICE ── */
+@media (hover: none) and (pointer: coarse) {
+  .flip-card .flip-card-inner { transform: none !important; }
+
+  .flip-card.flipped .flip-card-inner { transform: rotateY(180deg) !important; }
+
+  /* Magnetic buttons: disable transform physics */
+  .btn, .magnetic { transform: none !important; }
+}
+
+/* ── REDUCED MOTION ── */
+@media (prefers-reduced-motion: reduce) {
+  .glitch::before,
+  .glitch::after { animation: none; }
+
+  .tag-dot { animation: none; }
+  .scroll-line { animation: none; }
+  .geo { animation: none; }
+  .timeline-node::after { animation: none; }
+  .hex-node { animation: none; }
+  .badge-shine { display: none; }
+  .scanlines::after { display: none; }
+}

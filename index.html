@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Darshan Hubbly — ML/AI Engineer</title>
+  <meta name="description" content="5× Hackathon Winner, SDE (MLOps) pursuing M.S. in ML+AI. Building futuristic ML systems." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Grotesk:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div id="cursorTrail"></div>
+
+  <!-- ═══════════════════════════════════ NAV ═══════════════════════════════════ -->
+  <nav class="nav" id="mainNav">
+    <div class="nav-logo">
+      <span class="logo-bracket">[</span>DH<span class="logo-bracket">]</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#achievements" class="nav-link">Awards</a></li>
+      <li><a href="#contact" class="nav-link nav-cta magnetic">Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="nav-mobile-menu" id="navMobileMenu">
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#skills" class="mobile-link">Skills</a>
+    <a href="#experience" class="mobile-link">Experience</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#achievements" class="mobile-link">Awards</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+
+  <!-- ══════════════════════════════════ HERO ═══════════════════════════════════ -->
+  <section id="hero" class="hero">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-tag" data-reveal>
+        <span class="tag-dot"></span>
+        Available for Summer 2026 Roles
+      </div>
+      <h1 class="hero-name glitch" data-text="DARSHAN HUBBLY" data-reveal>DARSHAN HUBBLY</h1>
+      <div class="hero-role" data-reveal>
+        <span class="role-prefix">// </span>
+        <span id="typedRoles"></span>
+      </div>
+      <p class="hero-sub" data-reveal>
+        5× Hackathon Winner · MLOps · Computer Vision · Distributed Systems
+      </p>
+      <div class="hero-actions" data-reveal>
+        <a href="#projects" class="btn btn-primary magnetic">View My Work</a>
+        <a href="#contact" class="btn btn-secondary magnetic">Contact Me</a>
+      </div>
+      <div class="hero-scroll-hint" data-reveal>
+        <span>Scroll to explore</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+
+    <!-- Floating geo shapes in hero -->
+    <div class="geo geo-1 geo-octagon"></div>
+    <div class="geo geo-2 geo-triangle"></div>
+    <div class="geo geo-3 geo-ring"></div>
+    <div class="geo geo-4 geo-diamond"></div>
+  </section>
+
+  <!-- ═══════════════════════════════════ ABOUT ══════════════════════════════════ -->
+  <section id="about" class="section section-about scanlines">
+    <canvas class="matrix-canvas" id="matrixCanvas"></canvas>
+    <div class="container">
+      <div class="section-label" data-reveal>// WHO I AM</div>
+      <h2 class="section-title" data-reveal>Building the Future of <span class="text-cyan">Intelligent Systems</span></h2>
+      <p class="section-desc" data-reveal>
+        SDE (MLOps) pursuing an M.S. in Machine Learning + Math at SJSU. I architect and optimize
+        containerized ML/CV microservices for large-scale real-time pipelines — bridging the gap between
+        cutting-edge research and production-grade infrastructure.
+      </p>
+
+      <div class="stats-grid">
+        <div class="stat-card holo-card" data-reveal>
+          <div class="stat-number" data-count="5">0</div>
+          <div class="stat-unit">×</div>
+          <div class="stat-label">Hackathon Wins</div>
+          <div class="stat-glow cyan"></div>
+        </div>
+        <div class="stat-card holo-card" data-reveal>
+          <div class="stat-number" data-count="90">0</div>
+          <div class="stat-unit">%</div>
+          <div class="stat-label">Inference Speedup</div>
+          <div class="stat-glow purple"></div>
+        </div>
+        <div class="stat-card holo-card" data-reveal>
+          <div class="stat-number" data-count="92">0</div>
+          <div class="stat-unit">%</div>
+          <div class="stat-label">ML Model Accuracy</div>
+          <div class="stat-glow magenta"></div>
+        </div>
+        <div class="stat-card holo-card" data-reveal>
+          <div class="stat-number" data-count="30">0</div>
+          <div class="stat-unit">%</div>
+          <div class="stat-label">Labeling Effort Cut</div>
+          <div class="stat-glow cyan"></div>
+        </div>
+        <div class="stat-card holo-card" data-reveal>
+          <div class="stat-number" data-count="40">0</div>
+          <div class="stat-unit">%</div>
+          <div class="stat-label">Testing Effort Cut</div>
+          <div class="stat-glow purple"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="geo geo-5 geo-ring"></div>
+    <div class="geo geo-6 geo-octagon"></div>
+  </section>
+
+  <!-- ══════════════════════════════════ SKILLS ══════════════════════════════════ -->
+  <section id="skills" class="section section-skills">
+    <div class="container">
+      <div class="section-label" data-reveal>// TECH STACK</div>
+      <h2 class="section-title" data-reveal>Skills & <span class="text-purple">Technologies</span></h2>
+
+      <div class="skills-legend" data-reveal>
+        <span class="legend-item cyan">Core Languages</span>
+        <span class="legend-item purple">ML Stack</span>
+        <span class="legend-item magenta">Infrastructure</span>
+      </div>
+
+      <div class="hex-grid" id="hexGrid">
+        <!-- Core Languages (cyan) -->
+        <div class="hex-wrap">
+          <div class="hex-node cyan" data-skill="Python" data-level="Expert">
+            <div class="hex-inner">
+              <span class="hex-icon">🐍</span>
+              <span class="hex-label">Python</span>
+            </div>
+          </div>
+        </div>
+        <div class="hex-wrap">
+          <div class="hex-node cyan" data-skill="C++" data-level="Advanced">
+            <div class="hex-inner">
+              <span class="hex-icon">⚡</span>
+              <span class="hex-label">C++</span>
+            </div>
+          </div>
+        </div>
+        <div class="hex-wrap">
+          <div class="hex-node cyan" data-skill="CUDA" data-level="Advanced">
+            <div class="hex-inner">
+              <span class="hex-icon">🔲</span>
+              <span class="hex-label">CUDA</span>
+            </div>
+          </div>
+        </div>
+        <div class="hex-wrap">
+          <div class="hex-node cyan" data-skill="SQL" data-level="Proficient">
+            <div class="hex-inner">
+              <span class="hex-icon">🗃️</span>
+              <span class="hex-label">SQL</span>
+            </div>
+          </div>
+        </div>
+        <!-- ML Stack (purple) -->
+        <div class="hex-wrap">
+          <div class="hex-node purple" data-skill="PyTorch" data-level="Expert">
+            <div class="hex-inner">
+              <span class="hex-icon">🔥</span>
+              <span class="hex-label">PyTorch</span>
+            </div>
+          </div>
+        </div>
+        <div class="hex-wrap">
+          <div class="hex-node purple" data-skill="TensorFlow" data-level="Advanced">
+            <div class="hex-inner">
+              <span class="hex-icon">🧠</span>
+              <span class="hex-label">TensorFlow</span>
+            </div>
+          </div>
+        </div>
+        <div class="hex-wrap">
+          <div class="hex-node purple" data-skill="ROS" data-level="Proficient">
+            <div class="hex-inner">
+              <span class="hex-icon">🤖</span>
+              <span class="hex-label">ROS</span>
+            </div>
+          </div>
+        </div>
+        <div class="hex-wrap">
+          <div class="hex-node purple" data-skill="LangChain" data-level="Advanced">
+            <div class="hex-inner">
+              <span class="hex-icon">🔗</span>
+              <span class="hex-label">LangChain</span>
+            </div>
+          </div>
+        </div>
+        <!-- Infra (magenta) -->
+        <div class="hex-wrap">
+          <div class="hex-node magenta" data-skill="Docker" data-level="Expert">
+            <div class="hex-inner">
+              <span class="hex-icon">🐳</span>
+              <span class="hex-label">Docker</span>
+            </div>
+          </div>
+        </div>
+        <div class="hex-wrap">
+          <div class="hex-node magenta" data-skill="Kafka" data-level="Advanced">
+            <div class="hex-inner">
+              <span class="hex-icon">📨</span>
+              <span class="hex-label">Kafka</span>
+            </div>
+          </div>
+        </div>
+        <div class="hex-wrap">
+          <div class="hex-node magenta" data-skill="Redis" data-level="Advanced">
+            <div class="hex-inner">
+              <span class="hex-icon">⚡</span>
+              <span class="hex-label">Redis</span>
+            </div>
+          </div>
+        </div>
+        <div class="hex-wrap">
+          <div class="hex-node magenta" data-skill="AWS" data-level="Advanced">
+            <div class="hex-inner">
+              <span class="hex-icon">☁️</span>
+              <span class="hex-label">AWS</span>
+            </div>
+          </div>
+        </div>
+        <div class="hex-wrap">
+          <div class="hex-node magenta" data-skill="GCP" data-level="Proficient">
+            <div class="hex-inner">
+              <span class="hex-icon">🌐</span>
+              <span class="hex-label">GCP</span>
+            </div>
+          </div>
+        </div>
+        <div class="hex-wrap">
+          <div class="hex-node magenta" data-skill="Neo4j" data-level="Proficient">
+            <div class="hex-inner">
+              <span class="hex-icon">🕸️</span>
+              <span class="hex-label">Neo4j</span>
+            </div>
+          </div>
+        </div>
+        <div class="hex-wrap">
+          <div class="hex-node purple" data-skill="Claude AI" data-level="Advanced">
+            <div class="hex-inner">
+              <span class="hex-icon">✨</span>
+              <span class="hex-label">Claude AI</span>
+            </div>
+          </div>
+        </div>
+        <div class="hex-wrap">
+          <div class="hex-node magenta" data-skill="Nginx" data-level="Proficient">
+            <div class="hex-inner">
+              <span class="hex-icon">🔀</span>
+              <span class="hex-label">Nginx</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skill tooltip -->
+      <div class="skill-tooltip" id="skillTooltip">
+        <span class="tooltip-skill"></span>
+        <span class="tooltip-level"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ EXPERIENCE ═════════════════════════════════ -->
+  <section id="experience" class="section section-experience">
+    <div class="container">
+      <div class="section-label" data-reveal>// WORK HISTORY</div>
+      <h2 class="section-title" data-reveal>Where I've <span class="text-cyan">Built Things</span></h2>
+
+      <div class="timeline">
+        <div class="timeline-line" id="timelineLine"></div>
+
+        <!-- SJSU -->
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-node"></div>
+          <div class="timeline-card holo-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Graduate Research Assistant</h3>
+                <div class="timeline-company">San Jose State University</div>
+              </div>
+              <div class="timeline-date">
+                <span class="date-badge">Nov 2025 — Present</span>
+              </div>
+            </div>
+            <ul class="timeline-points">
+              <li>Research on computer vision and 3D animation systems</li>
+              <li>Developing novel CV pipelines for academic research applications</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag cyan">Computer Vision</span>
+              <span class="tag cyan">3D Animation</span>
+              <span class="tag cyan">Research</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vimaan -->
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-node"></div>
+          <div class="timeline-card holo-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Software Development Engineer (MLOps)</h3>
+                <div class="timeline-company">Vimaan.ai</div>
+              </div>
+              <div class="timeline-date">
+                <span class="date-badge">Oct 2023 — Jul 2025</span>
+              </div>
+            </div>
+            <ul class="timeline-points">
+              <li>Owned and maintained 3/8 critical micro-services in a containerized CV pipeline</li>
+              <li>Engineered async multiprocessing system with Kafka, Postgres, Docker, ROS, MinIO, Redis, Nginx</li>
+              <li>Revamped annotation pipelines (Dagster + CVAT) — <strong class="highlight">30% reduction</strong> in manual labeling effort</li>
+              <li>Redesigned ML modules from Python → C++ — <strong class="highlight">90% inference speedup</strong></li>
+              <li>Implemented on-premise LLM retrieval agent using Ollama, LangChain & Nvidia Triton</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag purple">Kafka</span>
+              <span class="tag purple">Docker</span>
+              <span class="tag purple">C++</span>
+              <span class="tag purple">ROS</span>
+              <span class="tag purple">LangChain</span>
+              <span class="tag purple">Redis</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bosch -->
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-node"></div>
+          <div class="timeline-card holo-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Software Engineering Intern</h3>
+                <div class="timeline-company">Bosch Global</div>
+              </div>
+              <div class="timeline-date">
+                <span class="date-badge">Jul 2023 — Sep 2023</span>
+              </div>
+            </div>
+            <ul class="timeline-points">
+              <li>Automated infotainment test cases with Python + ROS — <strong class="highlight">40% testing reduction</strong></li>
+              <li>Built fault-detection ML model from audio waveform data — <strong class="highlight">15% accuracy improvement</strong></li>
+              <li>Developed visualization tools for automotive log file debugging</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag magenta">Python</span>
+              <span class="tag magenta">ROS</span>
+              <span class="tag magenta">ML</span>
+              <span class="tag magenta">Automotive</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="geo geo-7 geo-diamond"></div>
+  </section>
+
+  <!-- ══════════════════════════════════ EDUCATION ═══════════════════════════════ -->
+  <section id="education" class="section section-education">
+    <div class="container">
+      <div class="section-label" data-reveal>// EDUCATION</div>
+      <h2 class="section-title" data-reveal>Academic <span class="text-purple">Foundation</span></h2>
+      <div class="edu-grid">
+        <div class="edu-card holo-card" data-reveal>
+          <div class="edu-icon">🎓</div>
+          <div class="edu-info">
+            <h3>M.S. Engineering (ML + AI)</h3>
+            <div class="edu-school">San Jose State University</div>
+            <div class="edu-date">Aug 2025 — Aug 2027</div>
+            <div class="edu-courses">
+              <span class="tag purple">Intelligent Autonomous Vehicles</span>
+              <span class="tag purple">Deep Learning</span>
+              <span class="tag purple">Parallel Processing</span>
+              <span class="tag purple">GPU Architecture</span>
+            </div>
+          </div>
+        </div>
+        <div class="edu-card holo-card" data-reveal>
+          <div class="edu-icon">🔬</div>
+          <div class="edu-info">
+            <h3>B.E. Computer Science & Engineering</h3>
+            <div class="edu-school">B.M.S College of Engineering</div>
+            <div class="edu-date">Aug 2020 — Aug 2024</div>
+            <div class="edu-gpa">GPA: <span class="text-cyan">3.8</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════ PROJECTS ════════════════════════════════ -->
+  <section id="projects" class="section section-projects">
+    <div class="container">
+      <div class="section-label" data-reveal>// FEATURED WORK</div>
+      <h2 class="section-title" data-reveal>Projects That <span class="text-magenta">Pushed Limits</span></h2>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="flip-card" data-reveal>
+          <div class="flip-card-inner">
+            <div class="flip-card-front holo-card">
+              <div class="project-icon">🤖</div>
+              <h3 class="project-title">Multi-Agent Incident Response</h3>
+              <p class="project-tagline">AI-powered L1 crisis triage system emulating SRE, Backend, Data & Security roles</p>
+              <div class="flip-hint">Hover to explore →</div>
+            </div>
+            <div class="flip-card-back holo-card">
+              <h3 class="project-title-back">AI Crisis System</h3>
+              <p class="project-desc">Multi-agent LLM system with RAG, log-parsing, and telemetry analysis. Produces automated RCA reports and mitigation steps via coordinated agent workflows.</p>
+              <div class="project-impact">
+                <span class="impact-label">🏆 Award-Winning Architecture</span>
+              </div>
+              <div class="project-tags">
+                <span class="tag cyan">LangChain</span>
+                <span class="tag cyan">CrewAI</span>
+                <span class="tag cyan">Neo4j</span>
+                <span class="tag cyan">Kafka</span>
+                <span class="tag cyan">FastAPI</span>
+                <span class="tag cyan">Triton</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="flip-card" data-reveal>
+          <div class="flip-card-inner">
+            <div class="flip-card-front holo-card">
+              <div class="project-icon">🔮</div>
+              <h3 class="project-title">AI Predictive Maintenance</h3>
+              <p class="project-tagline">End-to-end ML pipeline predicting hardware failures from sensor telemetry</p>
+              <div class="flip-hint">Hover to explore →</div>
+            </div>
+            <div class="flip-card-back holo-card">
+              <h3 class="project-title-back">Predictive ML System</h3>
+              <p class="project-desc">SageMaker pipeline with Linear Learner achieving 92% accuracy. Integrated AWS Bedrock (Claude 3.5 Sonnet) for natural language troubleshooting guidance.</p>
+              <div class="project-impact">
+                <span class="impact-label">⚡ 92% Classification Accuracy</span>
+              </div>
+              <div class="project-tags">
+                <span class="tag purple">AWS SageMaker</span>
+                <span class="tag purple">Bedrock</span>
+                <span class="tag purple">Claude 3.5</span>
+                <span class="tag purple">ML Pipeline</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="flip-card" data-reveal>
+          <div class="flip-card-inner">
+            <div class="flip-card-front holo-card">
+              <div class="project-icon">⚡</div>
+              <h3 class="project-title">CV Microservices @ Vimaan</h3>
+              <p class="project-tagline">High-throughput computer vision pipeline for warehouse-scale data streams</p>
+              <div class="flip-hint">Hover to explore →</div>
+            </div>
+            <div class="flip-card-back holo-card">
+              <h3 class="project-title-back">CV Pipeline</h3>
+              <p class="project-desc">Asynchronous multiprocessing CV system for large-scale warehouse automation. Python→C++ rewrite delivered 90% inference speedup for real-time processing.</p>
+              <div class="project-impact">
+                <span class="impact-label">🚀 90% Faster Inference</span>
+              </div>
+              <div class="project-tags">
+                <span class="tag magenta">C++ / CUDA</span>
+                <span class="tag magenta">Kafka</span>
+                <span class="tag magenta">ROS</span>
+                <span class="tag magenta">Docker</span>
+                <span class="tag magenta">MinIO</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="geo geo-8 geo-octagon"></div>
+    <div class="geo geo-9 geo-triangle"></div>
+  </section>
+
+  <!-- ═════════════════════════════════ ACHIEVEMENTS ════════════════════════════ -->
+  <section id="achievements" class="section section-achievements scanlines">
+    <div class="container">
+      <div class="section-label" data-reveal>// RECOGNITION</div>
+      <h2 class="section-title" data-reveal>Awards & <span class="text-cyan">Achievements</span></h2>
+
+      <div class="badges-grid">
+        <div class="badge-wrap" data-reveal>
+          <div class="badge badge-gold">
+            <div class="badge-shine"></div>
+            <div class="badge-icon">🥇</div>
+            <div class="badge-title">AWS AI Hack 2025</div>
+            <div class="badge-sub">First Place</div>
+          </div>
+        </div>
+        <div class="badge-wrap" data-reveal>
+          <div class="badge badge-gold">
+            <div class="badge-shine"></div>
+            <div class="badge-icon">🏆</div>
+            <div class="badge-title">5× Hackathon</div>
+            <div class="badge-sub">Champion</div>
+          </div>
+        </div>
+        <div class="badge-wrap" data-reveal>
+          <div class="badge badge-special">
+            <div class="badge-shine"></div>
+            <div class="badge-icon">🇺🇸</div>
+            <div class="badge-title">President's Award</div>
+            <div class="badge-sub">Academic Excellence</div>
+          </div>
+        </div>
+        <div class="badge-wrap" data-reveal>
+          <div class="badge badge-silver">
+            <div class="badge-shine"></div>
+            <div class="badge-icon">🥇</div>
+            <div class="badge-title">IEEE Codeathon</div>
+            <div class="badge-sub">First Place · 2023</div>
+          </div>
+        </div>
+        <div class="badge-wrap" data-reveal>
+          <div class="badge badge-bronze">
+            <div class="badge-shine"></div>
+            <div class="badge-icon">🥈</div>
+            <div class="badge-title">KSIT Hackathon</div>
+            <div class="badge-sub">Runner-Up · 2023</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════ CONTACT ═════════════════════════════════ -->
+  <section id="contact" class="section section-contact">
+    <div class="container">
+      <div class="section-label" data-reveal>// GET IN TOUCH</div>
+      <h2 class="section-title" data-reveal>Let's Build Something <span class="text-cyan">Extraordinary</span></h2>
+      <p class="section-desc" data-reveal>
+        Seeking Summer 2026 SDE / ML / AI internship or full-time roles. Let's connect.
+      </p>
+
+      <div class="contact-grid" data-reveal>
+        <a href="mailto:hubblydarshan@gmail.com" class="contact-card holo-card magnetic">
+          <div class="contact-icon">✉️</div>
+          <div class="contact-label">Email</div>
+          <div class="contact-value">hubblydarshan@gmail.com</div>
+        </a>
+        <a href="https://github.com/darshanhub" target="_blank" rel="noopener" class="contact-card holo-card magnetic">
+          <div class="contact-icon">💻</div>
+          <div class="contact-label">GitHub</div>
+          <div class="contact-value">github.com/darshanhub</div>
+        </a>
+        <a href="https://www.linkedin.com/in/darshan-hubbly-636287208/" target="_blank" rel="noopener" class="contact-card holo-card magnetic">
+          <div class="contact-icon">🔗</div>
+          <div class="contact-label">LinkedIn</div>
+          <div class="contact-value">linkedin.com/in/darshan-hubbly</div>
+        </a>
+        <a href="assets/resume.pdf" download class="contact-card holo-card magnetic">
+          <div class="contact-icon">📄</div>
+          <div class="contact-label">Resume</div>
+          <div class="contact-value">Download PDF</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="geo geo-10 geo-ring"></div>
+  </section>
+
+  <!-- ════════════════════════════════== FOOTER ═════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-line"></div>
+    <div class="footer-content">
+      <span class="footer-copy">© 2026 Darshan Hubbly</span>
+      <span class="footer-sig">Crafted with <span class="text-cyan">precision</span> &amp; <span class="text-purple">ambition</span></span>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════ SCRIPTS ═══════════════════════════════ -->
+  <!-- GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <!-- Typed.js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <!-- Three.js as module (loaded via main.js) -->
+  <script type="module" src="js/neural-net.js"></script>
+  <!-- App scripts -->
+  <script src="js/cursor.js"></script>
+  <script src="js/magnetic.js"></script>
+  <script src="js/skills.js"></script>
+  <script src="js/effects.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
